@@ -17,7 +17,11 @@ app.get('/', (req, res)=>{
       res.status(200).send('ruinning our server')
 })
 
-
+//producs
+app.get('/products', (req, res)=>{
+      console.log('Products')
+      res.status(200).send('Products')
+})
 
 app.listen(port, ()=>{
       console.log('Running Server', port)
